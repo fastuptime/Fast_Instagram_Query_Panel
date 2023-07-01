@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Instagram Sorgu</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <style>
+        /* Start Global Rules */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Small */
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+
+        /* Medium */
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+
+        /* Large */
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+
+        /* End Global Rules */
+        /* Start Landing Page */
+        .landing-page header {
+            min-height: 80px;
+            display: flex;
+        }
+
+        @media (max-width: 767px) {
+            .landing-page header {
+                min-height: auto;
+                display: initial;
+            }
+        }
+
+        .landing-page header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 767px) {
+            .landing-page header .container {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        .landing-page header .logo {
+            color: #5d5d5d;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .landing-page header .logo {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .landing-page header .links {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 767px) {
+            .landing-page header .links {
+                text-align: center;
+                gap: 10px;
+            }
+        }
+
+        .landing-page header .links li {
+            margin-left: 30px;
+            color: #5d5d5d;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        @media (max-width: 767px) {
+            .landing-page header .links li {
+                margin-left: auto;
+            }
+        }
+
+        .landing-page header .links li:last-child {
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: #FFF;
+            background-color: #6c63ff;
+        }
+
+        .landing-page header .links li:not(:last-child):hover {
+            color: #6c63ff;
+        }
+
+        .landing-page .content .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 140px;
+            min-height: calc(100vh - 80px);
+        }
+
+        @media (max-width: 767px) {
+            .landing-page .content .container {
+                gap: 0;
+                min-height: calc(100vh - 101px);
+                justify-content: center;
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .landing-page .content .info {
+                text-align: center;
+                margin-bottom: 15px
+            }
+        }
+
+        .landing-page .content .info h1 {
+            color: #5d5d5d;
+            font-size: 44px;
+        }
+
+        .landing-page .content .info p {
+            margin: 0;
+            line-height: 1.6;
+            font-size: 15px;
+            color: #5d5d5d;
+        }
+
+        .landing-page .content .info button {
+            border: 0;
+            border-radius: 20px;
+            padding: 12px 30px;
+            margin-top: 30px;
+            cursor: pointer;
+            color: #FFF;
+            background-color: #6c63ff;
+        }
+
+        .landing-page .content .image img {
+            max-width: 100%;
+        }
+
+        input {
+            border: 0;
+            border-radius: 20px;
+            border: 1px solid #000000;
+            padding: 12px 30px;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            border: 0;
+            border-radius: 20px;
+            padding: 12px 30px;
+            margin-top: 30px;
+            cursor: pointer;
+            color: #FFF;
+            background-color: #6c63ff;
+            float: right;
+        }
+
+        .btn-primary:hover {
+            background-color: #6c63ff;
+        }
+
+        p {
+            color: #5d5d5d;
+            font-size: 15px;
+        }
+
+        /* End Landing Page */
+    </style>
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+        <header>
+            <div class="container">
+                <a href="https://fastuptime.com" class="logo">Fast <b>Instagram</b> Sorgu</a>
+                <ul class="links">
+                    <li>
+                        <a href="https://fastuptime.com/github" target="_blank"
+                            style="color: #000000; font-weight: bold;"><i class="fab fa-github"></i> Github</a>
+                    </li>
+                    <li>
+                        <a href="https://fastuptime.com/discord" target="_blank"
+                            style="color: #ffffff; font-weight: bold;"><i class="fab fa-discord"></i> Discord</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="info">
+                    <h1><b>Instagram</b> Sorgu</h1>
+                    <p>Instagram hesaplarının bilgilerini sorgulayabileceğiniz bir araçtır.
+                    </p>
+                    <form action="/check" method="post">
+                        <div class="form-group">
+                            <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sorgula <i
+                                class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="image">
+                    <img src="https://i.postimg.cc/65QxYYzh/001234.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Landing Page -->
+</body>
+
+</html>
