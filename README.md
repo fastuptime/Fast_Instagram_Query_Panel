@@ -14,8 +14,8 @@ Fast Instagram Query Panel, Hesap Kuruluş Tarihi ve ID öğrenme
 - Bilgisayarınızda nodejs yok ise https://nodejs.org/ üzerinden indirip kurun.
 - Github'dan dosyayı indirin ve arşivden çıkarın.
 - Dosyanın bulunduğu konumda bir terminal/powershell açın.
-- `npm install` Yazark modülleri kurun.
-- `node .` Yazark'da siteyi başlatın.
+- `npm install` Yazarak modülleri kurun.
+- `node .` Yazarak'da siteyi başlatın.
 - localhost:80 adresinden siteye ulaşabilirsiniz.
 - Bilgisayarınıza kurmak istemiyorsanız direkt olarak replite github ile import edebilirsiniz.
   
